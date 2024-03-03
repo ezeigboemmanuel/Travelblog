@@ -2,7 +2,7 @@ import React from "react";
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
 import Hero from "@/components/Hero";
-import Countries from "@/components/Countries";
+import Main from "@/components/Main";
 
 const query = groq`
 *[_type == "post"] {
@@ -18,7 +18,7 @@ const page = async () => {
   return (
     <div>
       <Hero />
-      <Countries />
+      <Main />
     </div>
   );
 };
