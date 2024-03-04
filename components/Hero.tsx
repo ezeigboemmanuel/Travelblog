@@ -6,35 +6,35 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div>
-      <div className="relative w-full h-[75vh] bg-cover bg-center bg-no-repeat  bg-black/50">
+      <div className="relative w-full h-[75vh] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 -z-10">
           <Image
             src={BannerImg}
             fill
             alt="banner-img"
-            className="object-cover object-center"
+            className="object-cover object-center brightness-50"
           />
         </div>
-        <nav className="flex justify-between py-5 px-20 relative z-10">
-          <Link href="/" className="text-[#E7493F] font-semibold text-base">
+        <nav className="flex justify-between py-5 px-20 relative z-10 bg-[#1C252A]">
+          <Link href="/" className="text-gray-50 font-semibold text-base">
             Ztravblog
           </Link>
           <div className="flex space-x-10">
             <Link
               href="/"
-              className="text-[#E7493F] font-semibold text-base hover:underline"
+              className="text-gray-50 font-semibold text-base hover:underline"
             >
               TRAVEL BLOG
             </Link>
             <Link
               href="/"
-              className="text-[#E7493F] font-semibold text-base hover:underline"
+              className="text-gray-50 font-semibold text-base hover:underline"
             >
               TRAVEL REVIEWS
             </Link>
             <Link
               href="/"
-              className="text-[#E7493F] font-semibold text-base hover:underline"
+              className="text-gray-50 font-semibold text-base hover:underline"
             >
               ABOUT
             </Link>
@@ -51,7 +51,7 @@ const Hero = () => {
               Of Your Trip
             </h1>
             <div className="flex justify-center pt-10">
-              <button className="bg-gradient-to-r from-transparent to-[#E7493F] w-48 hover:bg-[#E7493F] text-white font-semibold hover:text-white py-2 px-4 border border-[#fff] hover:border-transparent p">
+              <button className="bg-gradient-to-r from-transparent to-[#E7493F] w-48 hover:bg-[#E7493F] text-white font-semibold hover:text-white py-2 px-4 border border-[#fff] hover:border-transparent">
                 EXPLORE NOW
               </button>
             </div>
