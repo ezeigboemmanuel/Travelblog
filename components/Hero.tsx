@@ -1,7 +1,8 @@
-import React from 'react'
+import React from "react";
 import BannerImg from "../public/assets/bannerimg2.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import Header from "./Header";
 
 const Hero = () => {
   return (
@@ -15,31 +16,6 @@ const Hero = () => {
             className="object-cover object-center brightness-50"
           />
         </div>
-        <nav className="flex justify-between py-5 px-20 relative z-10 bg-[#1C252A]">
-          <Link href="/" className="text-gray-50 font-semibold text-base">
-            Ztravblog
-          </Link>
-          <div className="flex space-x-10">
-            <Link
-              href="/"
-              className="text-gray-50 font-semibold text-base hover:underline"
-            >
-              TRAVEL BLOG
-            </Link>
-            <Link
-              href="/"
-              className="text-gray-50 font-semibold text-base hover:underline"
-            >
-              TRAVEL REVIEWS
-            </Link>
-            <Link
-              href="/"
-              className="text-gray-50 font-semibold text-base hover:underline"
-            >
-              ABOUT
-            </Link>
-          </div>
-        </nav>
 
         <div className="flex justify-end h-4/6 items-center">
           <div className="flex flex-col w-[50vw]">
@@ -59,7 +35,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

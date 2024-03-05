@@ -20,7 +20,6 @@ const page = async () => {
     <div>
       <Hero />
       <Main posts={posts} />
-      <Footer />
     </div>
   );
 };
