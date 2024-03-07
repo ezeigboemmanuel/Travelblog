@@ -16,8 +16,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         categories[]->,
         'comments': *[
           _type == 'comment' &&
-          post._ref == ^._id &&
-          approved == true],
+          post._ref == ^._id && approved == true],
     }`;
 
   const allPosts = groq`
@@ -27,7 +26,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
       categories[]
     } | order(_createdAt desc)
 `;
-  const post: Post = await client.fetch(query, params);
+  const post: Post = await client.fetch(query, params, { next: { revalidate: 10 } });
   const posts = await client.fetch(allPosts);
   return (
     <div>
@@ -56,7 +55,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto my-10">
+      <div className="max-w-5xl mx-auto my-10 px-10">
         <PortableText value={post.body} components={RichTextComponents} />
       </div>
 
