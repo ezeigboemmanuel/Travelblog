@@ -3,7 +3,6 @@ import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
 import Hero from "@/components/Hero";
 import Main from "@/components/Main";
-import Footer from "@/components/Footer";
 
 const query = groq`
 *[_type == "post"] {
