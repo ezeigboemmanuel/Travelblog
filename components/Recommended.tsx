@@ -33,7 +33,7 @@ const Recommended = ({ posts }: Props) => {
                 />
               </div>
               <div className="mx-5 pb-4 basis-[60%] text-[12px]">
-                <h1 className="mt-5 mb-2 font-semibold text-baseColor">
+                <h1 className="mt-2 mb-2 font-semibold text-baseColor">
                   {post.title}
                 </h1>
                 <p className="line-clamp-3">{post.description}</p>
