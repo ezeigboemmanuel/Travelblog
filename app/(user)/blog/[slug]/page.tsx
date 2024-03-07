@@ -5,9 +5,40 @@ import Image from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "@/components/RichTextComponents";
-import Recommended from "@/components/Recommended";
 import MoreBlogs from "@/components/MoreBlogs";
 import Comments from "@/components/Comments";
+
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const query = groq`
+    *[_type == "post" && slug.current == $slug][0] {
+          ...,
+          author->,
+          categories[]->,
+          'comments': *[
+            _type == 'comment' &&
+            post._ref == ^._id &&
+            approved == true],
+      }`;
+
+  const post: Post = await client.fetch(query, params , { next: { revalidate: 60 } });
+
+  return {
+    metadataBase: new URL("https://ztravel.vercel.app"),
+    title: post.title,
+    description: post.description,
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: `https://ztravel.vercel.app/blog/${post.slug.current}`,
+      siteName: "ZTravel",
+      images: [
+        {
+          url: urlForImage(post.mainImage),
+        },
+      ],
+    },
+  };
+}
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const query = groq`*[_type == "post" && slug.current == $slug][0] {

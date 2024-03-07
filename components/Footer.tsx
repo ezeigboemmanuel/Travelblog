@@ -1,6 +1,7 @@
 import React from "react";
 import FooterImg from "../public/assets/footerimg3.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -48,6 +49,9 @@ const Footer = () => {
                   <p>Affordable Weekends</p>
                   <p>Romantic Weekends</p>
                 </div>
+              </div>
+              <div>
+                <p>Developed by <Link href="https://twitter.com/zgbocode" target="_blank" className="underline">Ezeigbo Emmanuel</Link></p>
               </div>
             </div>
             <div className="flex flex-col gap-y-10">

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import FooterImg from "../public/assets/footerimg3.jpg";
+import Link from "next/link";
 
 const FooterMobile = () => {
   return (
@@ -156,6 +157,16 @@ const FooterMobile = () => {
                 </a>
               </div>
             </div>
+            <p className="font-normal mt-3">
+              Developed by{" "}
+              <Link
+                href="https://twitter.com/zgbocode"
+                target="_blank"
+                className="underline"
+              >
+                Ezeigbo Emmanuel
+              </Link>
+            </p>
           </div>
         </div>
       </div>
