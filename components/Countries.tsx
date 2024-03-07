@@ -27,7 +27,7 @@ const Countries = () => {
   return (
     <div className="flex flex-row justify-center gap-x-2 lg:gap-x-10 md:gap-x-4 mx-auto">
       {countries.map((country) => (
-        <div key={country.name} className="flex  flex-col border overflow-hidden bg-black items-center pb-4">
+        <div key={country.name} className="flex  flex-col border overflow-hidden bg-black items-center pb-2 md:pb-4">
           <Image
             src={country.image}
             alt="country_img"
