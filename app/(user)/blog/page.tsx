@@ -16,8 +16,8 @@ const query = groq`
 const page = async () => {
   const posts = await client.fetch(query);
   return (
-    <div className="mx-14 my-5">
-      <h2 className="text-2xl mt-2 mb-5 border-b-2 border-b-gray-400 pb-3 font-semibold">Recent travel blog posts</h2>
+    <div className="md:mx-14 my-5">
+      <h2 className="text-2xl mt-2 mb-5 border-b-2 border-b-gray-400 pb-3 font-semibold mx-4">Recent travel blog posts</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 gap-5 pb-10">
         {posts.map((post:any) => (
           <Route route={`/blog/${post.slug.current}`}>

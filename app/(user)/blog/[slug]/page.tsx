@@ -55,7 +55,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto my-10 px-10">
+      <div className="max-w-5xl mx-auto my-10 px-5 md:px-10">
         <PortableText value={post.body} components={RichTextComponents} />
       </div>
 

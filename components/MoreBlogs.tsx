@@ -13,7 +13,7 @@ const MoreBlogs = ({ posts, post }: Props) => {
     .filter((item) => item.title !== post.title)
     .slice(0, 3);
   return (
-    <div className="mx-14 my-10">
+    <div className="md:mx-14 my-10">
       <h2 className="text-2xl mt-5 mb-3 px-5 font-semibold">Read More Posts</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 gap-5 pb-10">
         {filteredPosts.map((post) => (

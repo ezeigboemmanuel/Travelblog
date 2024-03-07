@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const InstaCard = () => {
   return (
-    <div className="p-4">
-      <div className="bg-[#1C252A] border rounded-lg max-w-md">
+    <div className="flex items-center justify-center p-4">
+      <div className=" bg-[#1C252A] border rounded-lg max-w-md">
         <div className="flex items-center px-4 py-3">
           <Image
             className="h-8 w-8 rounded-full"

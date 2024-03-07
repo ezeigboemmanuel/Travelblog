@@ -25,22 +25,22 @@ const Countries = () => {
     },
   ];
   return (
-    <div className="flex flex-row justify-center gap-x-10">
+    <div className="flex flex-row justify-center gap-x-2 lg:gap-x-10 md:gap-x-4 mx-auto">
       {countries.map((country) => (
-        <div key={country.name} className="flex flex-col border overflow-hidden bg-black items-center pb-4">
+        <div key={country.name} className="flex  flex-col border overflow-hidden bg-black items-center pb-4">
           <Image
             src={country.image}
             alt="country_img"
-            className="h-40 w-40 overflow-hidden"
+            className="h-40 w-28 md:w-40"
           />
           <Image
             src={MapImg}
             alt="map_img"
-            className="h-28 w-40 overflow-hidden brightness-50 grayscale"
+            className="h-28 w-28 md:w-40 brightness-50 grayscale"
           />
           <p className="text-white text-[12px] font-semibold">{country.name}</p>
           <p className="text-[#E7493F] text-[10px]">{millify(country.readers) + " READERS"}</p>
-          <button className="w-32 text-[10px] bg-tranparent text-white py-2 px-4 border border-[#fff] hover:border-transparent">
+          <button className="w-24 md:w-32 text-[10px] bg-tranparent text-white py-2 px-4 border border-[#fff] hover:border-transparent">
             EXPLORE NOW
           </button>
         </div>
