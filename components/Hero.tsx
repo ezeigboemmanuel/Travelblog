@@ -1,8 +1,6 @@
 import React from "react";
 import BannerImg from "../public/assets/bannerimg2.jpg";
 import Image from "next/image";
-import Link from "next/link";
-import Header from "./Header";
 
 const Hero = () => {
   return (
