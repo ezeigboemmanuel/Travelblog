@@ -12,7 +12,7 @@ const BlogList = ({ posts }: Props) => {
     <div className="md:mx-14 my-10">
       {posts.map((post) => (
         <Route route={`/blog/${post.slug.current}`}>
-          <div key={post._id} className="border border-gray-200 rounded mb-3">
+          <div key={post._id} className="border border-gray-200 rounded mb-3 hover:shadow-md">
             <div className="relative w-full h-80 drop-shadow-xl">
               <Image
                 fill

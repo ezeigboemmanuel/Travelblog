@@ -110,7 +110,7 @@ function Comments({ post }: any) {
           <div className="divide-y">
             {post.comments.map((comment: any) => (
               <div key={comment._id} className="p-5">
-                <p className="text-baseColor text-base font-bold">
+                <p className="text-[#E7493F] text-base font-bold">
                   {comment.name}
                 </p>
                 <p className="text-gray-500 text-[12px]">

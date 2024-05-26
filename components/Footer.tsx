@@ -22,32 +22,32 @@ const Footer = () => {
               <div className="flex divide-x">
                 <div className="w-36">
                   <h3 className="font-semibold mb-3">EXPLORE</h3>
-                  <p>Journey</p>
-                  <p>Places</p>
-                  <p>Channel</p>
-                  <p>Editor's pick</p>
+                  <p className="cursor-pointer underline">Journey</p>
+                  <p className="cursor-pointer underline">Places</p>
+                  <p className="cursor-pointer underline">Channel</p>
+                  <p className="cursor-pointer underline">Editor's pick</p>
                 </div>
                 <div className="pl-10">
                   <h3 className="font-semibold mb-3">NAVIGATE</h3>
-                  <p>Contact Us</p>
-                  <p>Our Team</p>
-                  <p>Our Travel Articles</p>
-                  <p>A-Z of Destinations</p>
+                  <p className="cursor-pointer underline">Contact Us</p>
+                  <p className="cursor-pointer underline">Our Team</p>
+                  <p className="cursor-pointer underline">Our Travel Articles</p>
+                  <p className="cursor-pointer underline">A-Z of Destinations</p>
                 </div>
               </div>
               <div className="flex divide-x">
                 <div className="w-36">
                   <h3 className="font-semibold mb-3">TOP CITIES</h3>
-                  <p>Paris Guide</p>
-                  <p>Rome Breaks</p>
-                  <p>Japan Guide</p>
-                  <p>Vietnam Breaks</p>
+                  <p className="cursor-pointer underline">Paris Guide</p>
+                  <p className="cursor-pointer underline">Rome Breaks</p>
+                  <p className="cursor-pointer underline">Japan Guide</p>
+                  <p className="cursor-pointer underline">Vietnam Breaks</p>
                 </div>
                 <div className="pl-10">
                   <h3 className="font-semibold mb-3">CITY BREAKS</h3>
-                  <p>All City Breaks</p>
-                  <p>Affordable Weekends</p>
-                  <p>Romantic Weekends</p>
+                  <p className="cursor-pointer underline">All City Breaks</p>
+                  <p className="cursor-pointer underline">Affordable Weekends</p>
+                  <p className="cursor-pointer underline">Romantic Weekends</p>
                 </div>
               </div>
               <div>
@@ -58,16 +58,16 @@ const Footer = () => {
               <div className="flex divide-x">
                 <div className="w-36">
                   <h3 className="font-semibold mb-3">MORE TRAVEL</h3>
-                  <p>The Travel Mob</p>
-                  <p>The Green Life</p>
-                  <p>Travel Websites</p>
-                  <p>Top UK Travelers</p>
+                  <p className="cursor-pointer underline">The Travel Mob</p>
+                  <p className="cursor-pointer underline">The Green Life</p>
+                  <p className="cursor-pointer underline">Travel Websites</p>
+                  <p className="cursor-pointer underline">Top UK Travelers</p>
                 </div>
                 <div className="pl-10">
                   <h3 className="font-semibold mb-3">COMMUNITIES</h3>
-                  <p>Contributors</p>
-                  <p>Members</p>
-                  <p>True North</p>
+                  <p className="cursor-pointer underline">Contributors</p>
+                  <p className="cursor-pointer underline">Members</p>
+                  <p className="cursor-pointer underline">True North</p>
                 </div>
               </div>
               <div>

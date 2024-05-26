@@ -21,7 +21,7 @@ const page = async () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 gap-5 pb-10">
         {posts.map((post:any) => (
           <Route route={`/blog/${post.slug.current}`}>
-            <div key={post._id} className="border border-gray-200 rounded mb-3">
+            <div key={post._id} className="border border-gray-200 rounded mb-3 hover:shadow-md">
               <div className="relative w-full h-80 drop-shadow-xl">
                 <Image
                   fill

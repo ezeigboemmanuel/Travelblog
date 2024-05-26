@@ -14,7 +14,7 @@ const Featured = ({ posts }: Props) => {
   ); // Use the Exact title of the post you want to feature
   return (
     <div className="flex flex-col md:flex-row lg:gap-x-5 md:gap-x-2">
-      <div className="lg:mx-14 md:mx-6 mb-5">
+      <div className="lg:mx-14 md:mx-6 mb-5 hover:shadow-md">
         {filteredPost.map((post) => (
           <Route route={`/blog/${post.slug.current}`}>
             <div key={post._id} className="border border-gray-200 rounded mb-3">

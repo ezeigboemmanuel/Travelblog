@@ -22,7 +22,7 @@ const Recommended = ({ posts }: Props) => {
           <Route route={`/blog/${post.slug.current}`}>
             <div
               key={post._id}
-              className="flex border h-32 border-gray-200 rounded-lg mb-3"
+              className="flex border h-32 border-gray-200 rounded-lg mb-3 hover:shadow-md"
             >
               <div className="relative w-32 h-32 drop-shadow-xl basis-[40%]">
                 <Image
