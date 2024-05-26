@@ -22,52 +22,52 @@ const Footer = () => {
               <div className="flex divide-x">
                 <div className="w-36">
                   <h3 className="font-semibold mb-3">EXPLORE</h3>
-                  <p className="cursor-pointer underline">Journey</p>
-                  <p className="cursor-pointer underline">Places</p>
-                  <p className="cursor-pointer underline">Channel</p>
-                  <p className="cursor-pointer underline">Editor's pick</p>
+                  <p className="cursor-pointer hover:underline">Journey</p>
+                  <p className="cursor-pointer hover:underline">Places</p>
+                  <p className="cursor-pointer hover:underline">Channel</p>
+                  <p className="cursor-pointer hover:underline">Editor's pick</p>
                 </div>
                 <div className="pl-10">
                   <h3 className="font-semibold mb-3">NAVIGATE</h3>
-                  <p className="cursor-pointer underline">Contact Us</p>
-                  <p className="cursor-pointer underline">Our Team</p>
-                  <p className="cursor-pointer underline">Our Travel Articles</p>
-                  <p className="cursor-pointer underline">A-Z of Destinations</p>
+                  <p className="cursor-pointer hover:underline">Contact Us</p>
+                  <p className="cursor-pointer hover:underline">Our Team</p>
+                  <p className="cursor-pointer hover:underline">Our Travel Articles</p>
+                  <p className="cursor-pointer hover:underline">A-Z of Destinations</p>
                 </div>
               </div>
               <div className="flex divide-x">
                 <div className="w-36">
                   <h3 className="font-semibold mb-3">TOP CITIES</h3>
-                  <p className="cursor-pointer underline">Paris Guide</p>
-                  <p className="cursor-pointer underline">Rome Breaks</p>
-                  <p className="cursor-pointer underline">Japan Guide</p>
-                  <p className="cursor-pointer underline">Vietnam Breaks</p>
+                  <p className="cursor-pointer hover:underline">Paris Guide</p>
+                  <p className="cursor-pointer hover:underline">Rome Breaks</p>
+                  <p className="cursor-pointer hover:underline">Japan Guide</p>
+                  <p className="cursor-pointer hover:underline">Vietnam Breaks</p>
                 </div>
                 <div className="pl-10">
                   <h3 className="font-semibold mb-3">CITY BREAKS</h3>
-                  <p className="cursor-pointer underline">All City Breaks</p>
-                  <p className="cursor-pointer underline">Affordable Weekends</p>
-                  <p className="cursor-pointer underline">Romantic Weekends</p>
+                  <p className="cursor-pointer hover:underline">All City Breaks</p>
+                  <p className="cursor-pointer hover:underline">Affordable Weekends</p>
+                  <p className="cursor-pointer hover:underline">Romantic Weekends</p>
                 </div>
               </div>
               <div>
-                <p>Developed by <Link href="https://twitter.com/zgbocode" target="_blank" className="underline">Ezeigbo Emmanuel</Link></p>
+                <p>Developed by <Link href="https://twitter.com/zgbocode" target="_blank" className="hover:underline">Ezeigbo Emmanuel</Link></p>
               </div>
             </div>
             <div className="flex flex-col gap-y-10">
               <div className="flex divide-x">
                 <div className="w-36">
                   <h3 className="font-semibold mb-3">MORE TRAVEL</h3>
-                  <p className="cursor-pointer underline">The Travel Mob</p>
-                  <p className="cursor-pointer underline">The Green Life</p>
-                  <p className="cursor-pointer underline">Travel Websites</p>
-                  <p className="cursor-pointer underline">Top UK Travelers</p>
+                  <p className="cursor-pointer hover:underline">The Travel Mob</p>
+                  <p className="cursor-pointer hover:underline">The Green Life</p>
+                  <p className="cursor-pointer hover:underline">Travel Websites</p>
+                  <p className="cursor-pointer hover:underline">Top UK Travelers</p>
                 </div>
                 <div className="pl-10">
                   <h3 className="font-semibold mb-3">COMMUNITIES</h3>
-                  <p className="cursor-pointer underline">Contributors</p>
-                  <p className="cursor-pointer underline">Members</p>
-                  <p className="cursor-pointer underline">True North</p>
+                  <p className="cursor-pointer hover:underline">Contributors</p>
+                  <p className="cursor-pointer hover:underline">Members</p>
+                  <p className="cursor-pointer hover:underline">True North</p>
                 </div>
               </div>
               <div>
